@@ -9,7 +9,7 @@ public class KataTester {
 	//check default.txt
 	@Test 
 	public void testDefault() {
-		String[] args = {"default.txt"};
+		String[] args = {"/WordSearchKata/src/default.txt"};
 		String result = wordsearch.wordsearch(args);
 		assertTrue(result.equals("BONES: (0,6),(0,7),(0,8),(0,9),(0,10)\r\n" + 
 				"KHAN: (5,9),(5,8),(5,7),(5,6)\r\n" + 
@@ -21,7 +21,7 @@ public class KataTester {
 	}
 	@Test
 	public void testDefault2() {
-		String[] args = {"default2.txt"};
+		String[] args = {"/WordSearchKata/src/default2.txt"};
 		String result = wordsearch.wordsearch(args);
 		assertEquals(result, "ALPHA: (13,17),(13,18),(13,19),(13,20),(13,21)\r\n" + 
 				"ARMOR: (3,17),(4,18),(5,19),(6,20),(7,21)\r\n" + 
